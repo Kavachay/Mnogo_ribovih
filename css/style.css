@@ -1,70 +1,103 @@
-.main-text{
-    color:#4949a2
-}
-
-body {
-	 
-    font-family: 'Rostov', sans-serif;
-}
-body{
-    background-image: url("fonk.jpg");
-    background-color: #bfc8ff;
-    background-size: cover;
+html {
+   font-family: 'Rostov';
     
 }
 
+body{
+    background-color: #bfc8ff;
+    
+}
 
+a{
+    text-decoration:none;
+    -webkit-text-stroke: 1px #313030;
+    color: #a6b2f9;
+  }
 
 #first{
-    font-size: 3em;
     text-align: center;
-    height: 150px;
+    -webkit-text-stroke: 2.5px #313030;
+    color: #a6b2f9;
+    font-size: 3em;
+    height: 75px;
     width: 100%;
-    background-color: #bfc8ff;
+    background-color: #8f9be5;
     background-size: cover;
-    top:0;
+    top: 0;
     left: 0;
     right: 0;
-    position: absolute;
     border-radius: 20px 20px 60px 60px ;
-    
+
+}
+
+#leftside{
+    width: 100px;
+    height: 700px;
+    background-color: #8f9be5; 
+    background-size: cover;
+    top: 0;
+    left:0;
+}
+
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 80px auto;
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    transition: all.55s ease;
+    border-radius: 10px;
+    position: relative;
     
 }
 
-#block{
-    float: left;
-    background: purple;
-    height: 300px;
-    width: 300px;
-    border: 3px solid #ec8bcb;
-    text-align: center;
-    font-size: 2em;
-    border-radius: 6px 6px 6px 6px ;
+.card:hover{
+    transform: scale(0.95);
+}
+.card img{
+    transition: all.55s ease;
+}
+.card:hover img{
+    transform: scale(1.1);
+}
+.card-content{
     
-    position: relative;
-    top: 300px;
-    left: 600px;
+    text-align: center;
+    -webkit-text-stroke: 1px #313030;
+    font-size: 2.5em;
+    color: #a6b2f9;
+    opacity: 0;
+    padding: 0.5em;
+    z-index: 21;
+    
+}
+.card:hover .card-content{
+    transition: all.55s ease;
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+}
+
+.card::after{
+    transition: all.125s ease;
+    content: '';
+    position: absolute;
+    left: 0;
     right: 0;
-    Margin: 10px auto;
-    
-    
-    
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #8f9be5 200%);
+    z-index: 20;
+    display:none;
 }
 
-#block2{
-    float: left;
-    background: purple;
-    height: 300px;
-    width: 300px;
-    border: 3px solid #ec8bcb;
-    text-align: center;
-    font-size: 2em;
-    border-radius: 6px 6px 6px 6px ;
+.card:hover::after{
     
-    position: relative;
-    top: 300px;
-    left: 670px;
-    right:0;
-    Margin: 10px auto;
+    display: block;
 }
-    
