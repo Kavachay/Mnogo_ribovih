@@ -7,7 +7,7 @@ body {
     font-family: 'Rostov', sans-serif;
 }
 body{
-    background-image: url("/fonk.jpg");
+    background-image: url("fonk.jpg");
     background-color: #bfc8ff;
     background-size: cover;
     
