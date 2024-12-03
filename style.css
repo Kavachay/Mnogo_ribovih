@@ -1,0 +1,70 @@
+.main-text{
+    color:#4949a2
+}
+
+body {
+	 
+    font-family: 'Rostov', sans-serif;
+}
+body{
+    background-image: url("/fonk.jpg");
+    background-color: #bfc8ff;
+    background-size: cover;
+    
+}
+
+
+
+#first{
+    font-size: 3em;
+    text-align: center;
+    height: 150px;
+    width: 100%;
+    background-color: #bfc8ff;
+    background-size: cover;
+    top:0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    border-radius: 20px 20px 60px 60px ;
+    
+    
+}
+
+#block{
+    float: left;
+    background: purple;
+    height: 300px;
+    width: 300px;
+    border: 3px solid #ec8bcb;
+    text-align: center;
+    font-size: 2em;
+    border-radius: 6px 6px 6px 6px ;
+    
+    position: relative;
+    top: 300px;
+    left: 600px;
+    right: 0;
+    Margin: 10px auto;
+    
+    
+    
+}
+
+#block2{
+    float: left;
+    background: purple;
+    height: 300px;
+    width: 300px;
+    border: 3px solid #ec8bcb;
+    text-align: center;
+    font-size: 2em;
+    border-radius: 6px 6px 6px 6px ;
+    
+    position: relative;
+    top: 300px;
+    left: 670px;
+    right:0;
+    Margin: 10px auto;
+}
+    
